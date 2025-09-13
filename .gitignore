@@ -1,0 +1,9 @@
+# Ignore all files in the assets directory
+assets/*
+
+# igonre for image files
+image/*
+
+.vscode/*
+.DS_Store
+
