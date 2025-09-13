@@ -1,7 +1,39 @@
-.vscode/*
-.DS_Store
-# Ignore image and assets directory
-image/*
-assets/*
-*.png
+# Images
 *.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.svg
+*.webp
+*.ico
+
+# Videos
+*.mp4
+*.avi
+*.mov
+*.wmv
+
+# Audio
+*.mp3
+*.wav
+*.flac
+
+# Asset directories
+/assets/
+/images/
+/img/
+/media/
+/uploads/
+
+# Build and compiled assets
+/dist/
+/build/
+*.min.*
+bundle.*
+
+# Large files
+*.zip
+*.tar.gz
+*.rar
