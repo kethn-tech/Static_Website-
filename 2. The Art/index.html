@@ -1,157 +1,440 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>theArt</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Navbar -->
-    <div class="wrapper-container">
-      <nav>
-        <ul>
-          <li><a href="">Logo</a></li>
-        </ul>
-
-        <div class="burger">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ArtVision - Discover the World of Art</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    
+    <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <i class="fas fa-palette"></i>
+          <span>ArtVision</span>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#gallery" class="nav-link">Gallery</a>
+          <a href="#types" class="nav-link">Art Types</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="hamburger" id="hamburger">
           <span></span>
           <span></span>
           <span></span>
         </div>
-      </nav>
-      <!-- End Navbar -->
-
-      <header>
-        <h1 class="main-headings">
-          WHAT <br />
-          IS CALLED ART?
-        </h1>
-        <p class="primary-headings">
-          Art, also called (to distinguish it from other art forms) visual art,
-          a
-          <span class="bg-gray"> visual object or experience </span> consciously
-          created through an expression of skill or imagination.
-        </p>
-      </header>
-
-      <main>
-        <img
-          src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=745&q=80"
-          class="img"
-        />
-        <img
-          src="https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-          class="img"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1543857778-c4a1a3e0b2eb?q=80&w=3359&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          class="img"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1495462911434-be47104d70fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
-          class="img"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1579783901586-d88db74b4fe4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=748&q=80"
-          class="img"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1579783901837-c78c2310be05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=804&q=80"
-          class="img"
-        />
-      </main>
-
-      <section class="section-three">
-        <h1 class="main-headings">7 TYPES OF ART</h1>
-        <p class="primary-headings">
-          The seven different art forms are
-          <span class="bg-gray">
-            Painting, Sculpture, Literature, Architecture, Theater, Film, and
-            Music
-          </span>
-          . However, back in the day, the seven different art forms were called
-          the Liberal Arts, consisting of Grammar, Logic, Rhetoric, Arithmetic,
-          Geometry, Astronomy, and Music.
-        </p>
-
-        <div class="list">
-          <div class="item">
-            <h1>PAINTING</h1>
-            <img
-              src="https://images.unsplash.com/photo-1579965342575-16428a7c8881?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=762&q=80"
-            />
-          </div>
-          <div class="item">
-            <h1>SCULPTURE</h1>
-            <img
-              src="https://images.unsplash.com/photo-1637666505754-7416ebd70cbf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
-            />
-          </div>
-          <div class="item">
-            <h1>LITERATURE</h1>
-            <img
-              src="https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-            />
-          </div>
-          <div class="item">
-            <h1>ARCHITECTURE</h1>
-            <img
-              src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2020&q=80"
-            />
-          </div>
-          <div class="item">
-            <h1>CINEMA</h1>
-            <img
-              src="https://images.unsplash.com/photo-1604975701397-6365ccbd028a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
-            />
-          </div>
-          <div class="item">
-            <h1>MUSIC</h1>
-            <img
-              src="https://images.unsplash.com/photo-1598547535077-26d10ae80496?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=781&q=80"
-            />
-          </div>
-          <div class="item">
-            <h1>THEATER</h1>
-            <img
-              src="https://images.unsplash.com/photo-1578920568769-3c1b145bc9ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-            />
-          </div>
         </div>
-      </section>
+    </nav>
 
-      <footer>
-        <div class="logo-container">
-          <h1>Logo</h1>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.
-          </p>
-        </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-background">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <span class="hero-badge">Discover Art</span>
+            <h1 class="hero-title">
+              What Is Called
+              <span class="gradient-text">Art?</span>
+            </h1>
+                    <p class="hero-description">
+                      Art, also called visual art, is a
+                      <span class="highlight">visual object or experience</span>
+                      consciously created through an expression of skill or imagination.
+                      It speaks to our emotions and challenges our perspectives.
+                    </p>
+                    <div class="hero-buttons">
+                      <button class="btn btn-primary">
+                        <i class="fas fa-images"></i>
+                        Explore Gallery
+                      </button>
+                      <button class="btn btn-secondary">
+                        <i class="fas fa-play"></i>
+                        Watch Documentary
+                      </button>
+                    </div>
+                    </div>
+                    <div class="hero-stats">
+                      <div class="stat">
+                        <h3>7</h3>
+                        <p>Art Forms</p>
+                      </div>
+                      <div class="stat">
+                        <h3>∞</h3>
+                        <p>Possibilities</p>
+                      </div>
+                      <div class="stat">
+                        <h3>1000+</h3>
+                        <p>Masterpieces</p>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                    </section>
+                    
+                    <!-- Gallery Section -->
+                    <section id="gallery" class="gallery">
+                      <div class="container">
+                        <div class="section-header">
+                          <span class="section-badge">Collection</span>
+                          <h2 class="section-title">Featured Artworks</h2>
+                          <p class="section-subtitle">Explore our curated selection of breathtaking artistic masterpieces</p>
+                        </div>
+                    
+                        <div class="gallery-grid">
+                          <div class="gallery-item">
+                            <div class="gallery-image">
+                              <img
+                                src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=745&q=80"
+                                alt="Abstract Art">
+                              <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                  <h4>Abstract Expression</h4>
+                                  <p>Contemporary Art</p>
+                                  <button class="btn btn-small">View Details</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <div class="gallery-item large">
+                            <div class="gallery-image">
+                              <img
+                                src="https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                                alt="Classical Painting">
+                              <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                  <h4>Renaissance Beauty</h4>
+                                  <p>Classical Art</p>
+                                  <button class="btn btn-small">View Details</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <div class="gallery-item">
+                            <div class="gallery-image">
+                              <img
+                                src="https://images.unsplash.com/photo-1543857778-c4a1a3e0b2eb?q=80&w=3359&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Modern Art">
+                              <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                  <h4>Modern Sculpture</h4>
+                                  <p>Contemporary</p>
+                                  <button class="btn btn-small">View Details</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <div class="gallery-item tall">
+                            <div class="gallery-image">
+                              <img
+                                src="https://images.unsplash.com/photo-1495462911434-be47104d70fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+                                alt="Portrait Art">
+                              <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                  <h4>Portrait Study</h4>
+                                  <p>Fine Art</p>
+                                  <button class="btn btn-small">View Details</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <div class="gallery-item">
+                            <div class="gallery-image">
+                              <img
+                                src="https://images.unsplash.com/photo-1579783901586-d88db74b4fe4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=748&q=80"
+                                alt="Abstract Colors">
+                              <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                  <h4>Color Symphony</h4>
+                                  <p>Abstract</p>
+                                  <button class="btn btn-small">View Details</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
 
-        <div class="about-company">
-          <div class="container">
-            <h1>About</h1>
-            <p>News & Blog</p>
-            <p>Features</p>
-            <p>About Us</p>
-          </div>
-          <div class="container">
-            <h1>Company</h1>
-            <p>How We Work?</p>
-            <p>Capital</p>
-            <p>Security</p>
-          </div>
-          <div class="container">
-            <h1>Support</h1>
-            <p>FAQs</p>
-            <p>Support</p>
-            <p>Contact Us</p>
-          </div>
+                <div class="gallery-item">
+                  <div class="gallery-image">
+                    <img
+                      src="https://images.unsplash.com/photo-1579783901837-c78c2310be05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=804&q=80"
+                      alt="Vintage Art">
+                    <div class="gallery-overlay">
+                      <div class="overlay-content">
+                        <h4>Vintage Collection</h4>
+                        <p>Classic</p>
+                        <button class="btn btn-small">View Details</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                </div>
+                </section>
+
+    <!-- Art Types Section -->
+    <section id="types" class="art-types">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Categories</span>
+          <h2 class="section-title">7 Types of Art</h2>
+          <p class="section-subtitle">
+            The seven different art forms are
+                    <span class="highlight">Painting, Sculpture, Literature, Architecture, Theater, Film, and Music</span>.
+                    Each represents a unique way of human expression and creativity.
+                    </p>
+            </div>
+
+            <div class="art-types-grid">
+              <div class="art-type-card">
+                <div class="card-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1579965342575-16428a7c8881?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=762&q=80"
+                    alt="Painting">
+                  <div class="card-number">01</div>
+                </div>
+                <div class="card-content">
+                  <h3>Painting</h3>
+                  <p>The art of applying pigment to a surface to create visual compositions that express ideas and emotions.</p>
+                  <div class="card-features">
+                    <span>Oil Painting</span>
+                    <span>Watercolor</span>
+                    <span>Acrylic</span>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="art-type-card">
+                <div class="card-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1637666505754-7416ebd70cbf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+                    alt="Sculpture">
+                  <div class="card-number">02</div>
+                </div>
+                    <div class="card-content">
+                      <h3>Sculpture</h3>
+                      <p>Three-dimensional artworks created by shaping materials like stone, metal, wood, or clay.</p>
+                      <div class="card-features">
+                        <span>Bronze</span>
+                        <span>Marble</span>
+                        <span>Modern Materials</span>
+                      </div>
+                    </div>
+                </div>
+<div class="art-type-card">
+  <div class="card-image">
+    <img
+      src="https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+      alt="Literature">
+    <div class="card-number">03</div>
+  </div>
+                    <div class="card-content">
+                      <h3>Literature</h3>
+                      <p>Written works of artistic expression that explore human experience through language and narrative.</p>
+                      <div class="card-features">
+                        <span>Poetry</span>
+                        <span>Novels</span>
+                        <span>Drama</span>
+                      </div>
+                    </div>
+                    </div>
+                    
+                    <div class="art-type-card">
+                      <div class="card-image">
+                        <img
+                          src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2020&q=80"
+                          alt="Architecture">
+                        <div class="card-number">04</div>
+                      </div>
+                      <div class="card-content">
+                        <h3>Architecture</h3>
+                        <p>The art of designing and constructing buildings that are both functional and aesthetically pleasing.</p>
+                        <div class="card-features">
+                          <span>Classical</span>
+                          <span>Modern</span>
+                          <span>Contemporary</span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="art-type-card">
+                      <div class="card-image">
+                        <img
+                          src="https://images.unsplash.com/photo-1604975701397-6365ccbd028a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+                          alt="Cinema">
+                        <div class="card-number">05</div>
+                      </div>
+                      <div class="card-content">
+                        <h3>Cinema</h3>
+                        <p>The art of creating moving images that tell stories and evoke emotions through visual narrative.</p>
+                        <div class="card-features">
+                          <span>Direction</span>
+                          <span>Cinematography</span>
+                          <span>Editing</span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="art-type-card">
+                      <div class="card-image">
+                        <img
+                          src="https://images.unsplash.com/photo-1598547535077-26d10ae80496?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=781&q=80"
+                          alt="Music">
+                        <div class="card-number">06</div>
+                      </div>
+                      <div class="card-content">
+                        <h3>Music</h3>
+                        <p>The art of organizing sounds in time to create harmony, melody, and rhythm that speaks to the soul.</p>
+                        <div class="card-features">
+                          <span>Classical</span>
+                          <span>Contemporary</span>
+                          <span>Electronic</span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="art-type-card">
+                      <div class="card-image">
+                        <img
+                          src="https://images.unsplash.com/photo-1578920568769-3c1b145bc9ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                          alt="Theater">
+                        <div class="card-number">07</div>
+                      </div>
+                      <div class="card-content">
+                        <h3>Theater</h3>
+                        <p>Live performance art that combines acting, music, dance, and stagecraft to tell compelling stories.</p>
+                        <div class="card-features">
+                          <span>Drama</span>
+                          <span>Musical</span>
+                          <span>Opera</span>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
         </div>
-      </footer>
-    </div>
-  </body>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <div class="section-header">
+              <span class="section-badge">Our Mission</span>
+              <h2 class="section-title">Bringing Art to Everyone</h2>
+            </div>
+            <p>
+                        We believe that art has the power to transform lives, inspire creativity,
+                        and bring people together. Our mission is to make art accessible to everyone,
+                        regardless of their background or experience level.
+                        </p>
+                    <div class="features-grid">
+                      <div class="feature">
+                        <i class="fas fa-eye"></i>
+                        <div>
+                          <h4>Visual Discovery</h4>
+                          <p>Explore diverse artistic styles and movements</p>
+                        </div>
+                      </div>
+                      <div class="feature">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                          <h4>Educational Resources</h4>
+                          <p>Learn about art history and techniques</p>
+                        </div>
+                      </div>
+                      <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <div>
+                          <h4>Community</h4>
+                          <p>Connect with fellow art enthusiasts</p>
+                        </div>
+                      </div>
+                      <div class="feature">
+                        <i class="fas fa-lightbulb"></i>
+                        <div>
+                          <h4>Inspiration</h4>
+                          <p>Fuel your own creative journey</p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+      <div class="container">
+            <div class="footer-content">
+              <div class="footer-section">
+                <div class="footer-logo">
+                  <i class="fas fa-palette"></i>
+                  <span>ArtVision</span>
+                </div>
+                <p class="footer-description">
+                  Discover the world of art through our comprehensive collection
+                  and educational resources. Join our community of art lovers.
+                </p>
+                <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+              </div>
+            
+              <div class="footer-section">
+                <h4 class="footer-title">About</h4>
+                <ul class="footer-links">
+                  <li><a href="#">News & Blog</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Our Story</a></li>
+                </ul>
+              </div>
+            
+              <div class="footer-section">
+                <h4 class="footer-title">Company</h4>
+                <ul class="footer-links">
+                  <li><a href="#">How We Work?</a></li>
+                  <li><a href="#">Capital</a></li>
+                  <li><a href="#">Security</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+              </div>
+            
+              <div class="footer-section">
+                <h4 class="footer-title">Support</h4>
+                <ul class="footer-links">
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Help Center</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>&copy; 2024 ArtVision.  Crafted with <i class="fas fa-heart"></i> by Kethan R Ayatti</p>
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
 </html>

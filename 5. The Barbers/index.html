@@ -1,156 +1,237 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Barbers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Barbers - Premium Barbershop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js"></script>
+    </head>
+    
+    <body>
+    <!-- Navigation -->
     <header class="header">
-      <nav class="nav">
-        <h1 class="logo">Barbers</h1>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Experience</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Services</a></li>
-        </ul>
-      </nav>
+        <nav class="nav">
+            <div class="nav-container">
+              <h1 class="logo">The Barbers</h1>
+              <button class="nav-toggle" id="nav-toggle">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+              </button>
+              <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+              </ul>
+            </div>
+        </nav>
 
-      <div class="content__container">
-        <section class="header__content">
-          <h1 class="header__heading">
-            THE <br />
-            BARBERS
-          </h1>
-          <p class="header__sub-headings">
-            Barber is a person who occupation is mainly to cut dress groom style
-            and shave men's and boy's hair
-          </p>
-          <div class="btn-container">
-            <a href="" class="main-btn">Learn More</a>
-          </div>
-        </section>
-
-        <div class="header__img-container">
-          <img
-            src="assets/jakob-owens-lkMJcGDZLVs-unsplash.jpg"
-            class="header__img img-one"
-          />
-          <img
-            src="assets/stephan-louis-L3s5QySz5UM-unsplash.jpg"
-            class="header__img img-two"
-          />
-        </div>
-      </div>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+          <div class="hero-container">
+            <div class="hero-content">
+              <h1 class="hero-title">
+                THE<br>
+                BARBERS
+              </h1>
+                    <p class="hero-subtitle">
+                      Professional barber services specializing in modern cuts, classic styles, and premium grooming for men and boys.
+                    </p>
+                    <div class="hero-buttons">
+                      <a href="#services" class="btn btn-primary">Our Services</a>
+                      <a href="#contact" class="btn btn-secondary">Book Now</a>
+                    </div>
+                </div>
+                <div class="hero-images">
+                  <div class="hero-img hero-img-1">
+                    <img src="assets/jakob-owens-lkMJcGDZLVs-unsplash.jpg" alt="Professional barber at work">
+                    </div>
+                    <div class="hero-img hero-img-2">
+                      <img src="assets/stephan-louis-L3s5QySz5UM-unsplash.jpg" alt="Modern haircut styling">
+                    </div>
+                    </div>
+                    </div>
+                    </section>
     </header>
 
-    <!-- Experience -->
-    <section class="experience">
-      <div class="experience__content">
-        <h2 class="gray-heading">30 Years</h2>
-        <h1 class="header__heading experience-headings">EXPERIENCE</h1>
-        <p class="header__sub-headings experience__sub-headings">
-          Barber is a person who occupation is mainly to cut dress groom style
-          and shave men's and boy's hair.
-        </p>
-        <div class="btn-container">
-          <a href="" class="main-btn">Learn More</a>
-        </div>
-      </div>
-      <div class="experience-img"></div>
-    </section>
-
-    <section class="social-media">
-      <ul class="sm-container">
-        <div class="follow">FOLLOW</div>
-        <li class="list-items"><a href="">YOUTUBE</a></li>
-        <li class="list-items"><a href="">INSTAGRAM</a></li>
-        <li class="list-items"><a href="">FACEBOOK</a></li>
-        <li class="list-items"><a href="">TWITTER</a></li>
-      </ul>
-    </section>
-
-    <section class="hero">
-      <div class="hero-container">
-        <div class="hero-img-container"></div>
-        <div class="hero__content">
-          <h1 class="header__heading hero__headings">
-            Meet<br />
-            Our Hero
-          </h1>
-          <p class="header__sub-headings hero__sub-headings">
-            Barber is a person who occupation is mainly to cut dress groom style
-            and shave men's and boy's hair.
-          </p>
-          <div class="btn-contaienr">
-            <a href="" class="main-btn">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="services">
-      <h2 class="gray-heading services_g-heading">Top Quality</h2>
-      <h1 class="header__heading services-heading">SERVICES</h1>
-
-      <div class="cards">
-        <div class="card">
-          <div class="card-img img-one"></div>
-          <div class="card-content">
-            <h1 class="card-title">Hair Cutting</h1>
-            <p class="card-info">
-              Barber is a person who occupation is mainly to cut dress groom
-              style
+    <!-- Experience Section -->
+    <section class="experience-section" id="experience">
+      <div class="container">
+        <div class="experience-content">
+          <div class="experience-text">
+            <span class="section-label">30 Years</span>
+            <h2 class="section-title">EXPERIENCE</h2>
+            <p class="section-description">
+              Three decades of mastering the art of barbering. Our skilled professionals deliver exceptional cuts, styling,
+              and grooming services with precision and care.
             </p>
-            <a href="" class="main-btn card-btn">Learn More</a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-img img-two"></div>
-          <div class="card-content">
-            <h1 class="card-title">Beard Triming</h1>
-            <p class="card-info">
-              Barber is a person who occupation is mainly to cut dress groom
-              style
-            </p>
-            <a href="" class="main-btn card-btn">Learn More</a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-img img-three"></div>
-          <div class="card-content">
-            <h1 class="card-title">Smooth Shave</h1>
-            <p class="card-info">
-              Barber is a person who occupation is mainly to cut dress groom
-              style
-            </p>
-            <a href="" class="main-btn card-btn">Learn More</a>
+                    <a href="#about" class="btn btn-primary">Learn More</a>
+                    </div>
+                <div class="experience-image">
+                  <img src="assets/eugene-chystiakov-taZSJ6xmt48-unsplash.jpg" alt="Experienced barber working">
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-section">
+      <div class="container">
+        <div class="social-container">
+          <span class="social-label">FOLLOW US</span>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <i class="fab fa-youtube"></i>
+              <span>YOUTUBE</span>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-instagram"></i>
+              <span>INSTAGRAM</span>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-facebook"></i>
+              <span>FACEBOOK</span>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-twitter"></i>
+              <span>TWITTER</span>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="footer__card">
-        <h1 class="footer__card-title">About</h1>
-        <p class="footer__card-info">General Info</p>
-        <p class="footer__card-info">Traiffs</p>
-        <p class="footer__card-info">FAQ</p>
-      </div>
-      <div class="footer__card">
-        <h1 class="footer__card-title">Legal</h1>
-        <p class="footer__card-info">Privacy Policy</p>
-        <p class="footer__card-info">Tearms of Use</p>
-        <p class="footer__card-info">Payments</p>
-      </div>
-      <div class="footer__card">
-        <h1 class="footer__card-title">Contact</h1>
-        <p class="footer__card-info">Twitter</p>
-        <p class="footer__card-info">Instagram</p>
-        <p class="footer__card-info">Facebook</p>
-      </div>
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-image">
+            <img src="assets/albert-dera-ILip77SbmOE-unsplash.jpg" alt="Master barber portrait">
+          </div>
+          <div class="about-text">
+            <h2 class="section-title">Meet Our Master Barber</h2>
+            <p class="section-description">
+              With over three decades in the industry, our master barber combines traditional techniques with modern styling
+              to deliver exceptional results. Experience the difference of true craftsmanship.
+            </p>
+                    <div class="about-stats">
+                      <div class="stat">
+                        <span class="stat-number">10,000+</span>
+                        <span class="stat-label">Happy Clients</span>
+                      </div>
+                      <div class="stat">
+                        <span class="stat-number">30+</span>
+                        <span class="stat-label">Years Experience</span>
+                      </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Book Appointment</a>
+                    </div>
+                    </div>
+                    </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="services-header">
+          <span class="section-label">Top Quality</span>
+          <h2 class="section-title">SERVICES</h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-image">
+              <img src="assets/john-arano-CCTCHXEsan8-unsplash.jpg" alt="Professional hair cutting">
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Hair Cutting</h3>
+              <p class="service-description">
+                Precision cuts tailored to your style and face shape. From classic to contemporary looks.
+              </p>
+                        <span class="service-price">From $25</span>
+                        <a href="#contact" class="btn btn-outline">Book Now</a>
+                        </div>
+                </div>
+                <div class="service-card">
+                  <div class="service-image">
+                    <img src="assets/allef-vinicius-IvQeAVeJULw-unsplash.jpg" alt="Professional beard trimming">
+                  </div>
+                  <div class="service-content">
+                    <h3 class="service-title">Beard Trimming</h3>
+                    <p class="service-description">
+                      Expert beard shaping and trimming to complement your facial features perfectly.
+                    </p>
+                        <span class="service-price">From $15</span>
+                        <a href="#contact" class="btn btn-outline">Book Now</a>
+                        </div>
+                </div>
+                <div class="service-card">
+                  <div class="service-image">
+                    <img src="assets/christoffer-engstrom-1ouGlRChSbY-unsplash.jpg" alt="Professional smooth shave">
+                  </div>
+                  <div class="service-content">
+                    <h3 class="service-title">Smooth Shave</h3>
+                    <p class="service-description">
+                      Traditional hot towel shave experience with premium products for ultimate comfort.
+                    </p>
+                        <span class="service-price">From $20</span>
+                        <a href="#contact" class="btn btn-outline">Book Now</a>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3 class="footer-title">About</h3>
+            <ul class="footer-links">
+              <li><a href="#">General Info</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Reviews</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-title">Legal</h3>
+            <ul class="footer-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Payments</a></li>
+              <li><a href="#">Cancellation</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-title">Contact</h3>
+            <ul class="footer-links">
+              <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+              <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+              <li><a href="tel:+1234567890"><i class="fas fa-phone"></i> Call Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-title">Hours</h3>
+            <ul class="footer-info">
+              <li>Mon - Fri: 9:00 AM - 7:00 PM</li>
+              <li>Saturday: 8:00 AM - 6:00 PM</li>
+              <li>Sunday: 10:00 AM - 4:00 PM</li>
+            </ul>
+          </div>
+        </div>
+            <div class="footer-bottom">
+              <p>&copy; 2024 The Barbers. All rights reserved. Crafted with <i class="fas fa-heart"></i> by Kethan R Ayatti</p>
+              </p>
+            </div>
+        </div>
     </footer>
-  </body>
+<script src="script.js"></script>
+</body>
 </html>

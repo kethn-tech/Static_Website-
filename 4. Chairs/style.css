@@ -1,429 +1,567 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+      margin: 0;
+      box-sizing: border-box;
 }
 
 :root {
-  --main-color: #e3e8e4;
-  --primary-color: #363636;
-  --main-font: "Playfair Display SC", serif;
+    --main-color: #e3e8e4;
+      --primary-color: #363636;
+    --main-font: "Playfair Display", serif;
 }
 
+/* Navigation */
 nav {
+    display: flex;
+    justify-content: space-between;
+      align-items: center;
+    padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+}
+
+.logo h1 {
+  font-family: var(--main-font);
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.nav-menu {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  font-family: sans-serif;
-  padding: 10px;
-}
-
-ul li {
-  display: inline;
   list-style: none;
+    gap: 2rem;
 }
 
-ul li a {
+.nav-menu a {
   text-decoration: none;
-  color: #000;
-  margin-left: 4rem;
+    color: var(--primary-color);
+      font-weight: 500;
+      transition: all 0.3s ease;
 }
 
-ul li a:hover {
+.nav-menu a:hover {
   border-bottom: 2px solid var(--primary-color);
-  padding-bottom: 10px;
+    padding-bottom: 5px;
+    }
+    
+    .mobile-menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      padding: 5px;
+    }
+    
+    .mobile-menu-toggle span {
+      width: 25px;
+      height: 3px;
+      background: var(--primary-color);
+      margin: 3px 0;
+      transition: 0.3s;
 }
 
 .btn-fill {
-  padding: 10px 30px;
-  background: var(--primary-color);
-  border: none;
-  border-radius: 100px;
-  color: #fff;
-  cursor: pointer;
+    padding: 12px 30px;
+      background: var(--primary-color);
+      border: none;
+    border-radius: 50px;
+      color: #fff;
+      cursor: pointer;
+    font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    
+    .btn-fill:hover {
+      background: #2a2a2a;
+      transform: translateY(-2px);
 }
 
 .btn-outline {
-  background: transparent;
-  border: none;
-  margin-left: 20px;
-  font-weight: bold;
-  cursor: pointer;
+    background: transparent;
+    border: 2px solid var(--primary-color);
+      padding: 10px 28px;
+      border-radius: 50px;
+      margin-left: 20px;
+    font-weight: 600;
+      cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-/* header */
+.btn-outline:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+/* Header */
 header {
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+    min-height: 90vh;
+      display: flex;
+    align-items: center;
+      justify-content: space-between;
+    padding: 2rem;
+      gap: 2rem;
 }
 
 .content-container {
-  margin-left: 6rem;
+    flex: 1;
+      max-width: 600px;
 }
 
 .main-headings {
-  font-size: 4rem;
-  font-family: var(--main-font);
-  color: #0000004f;
-  margin-bottom: 2rem;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+      font-family: var(--main-font);
+    color: rgba(0, 0, 0, 0.3);
+      margin-bottom: 2rem;
+    line-height: 1.2;
 }
 
 .main-headings span {
-  color: #000;
+    color: var(--primary-color);
+      font-weight: 700;
 }
 
 .primary-headings {
-  max-width: 500px;
-  font-family: sans-serif;
-  line-height: 25px;
-  margin-bottom: 2rem;
+    font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    color: #666;
+    }
+    
+    .btns-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
 }
 
 .img-container {
-  width: 500px;
-  height: 500px;
-  background: var(--main-color);
-  border-radius: 100%;
+    flex: 1;
+      max-width: 500px;
+      width: 100%;
+      height: 500px;
+      background: var(--main-color);
+    border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
 }
 
 .img-container img {
-  width: 400px;
-  height: 500px;
-  margin-left: 20px;
-  margin-bottom: 40px;
+    width: 80%;
+      height: 100%;
+      object-fit: cover;
 }
 
-/* popularity */
+/* Popularity Stats */
 .popularity {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+      align-items: center;
+    gap: 4rem;
+      padding: 4rem 2rem;
+      flex-wrap: wrap;
 }
 
-.popularity div {
-  margin-right: 5rem;
+.popularity-item {
+  text-align: center;
 }
 
-.popularity div h1 {
+.popularity-item h1 {
   font-size: 3rem;
-  text-align: center;
-  color: #363636;
-  font-family: var(--main-font);
+    color: var(--primary-color);
+      font-family: var(--main-font);
+    margin-bottom: 0.5rem;
 }
-.popularity div p {
-  color: #363636;
-  font-family: sans-serif;
+.popularity-item p {
+  color: #666;
+  font-size: 1rem;
 }
 
-/* PRODUCTS */
+/* Products */
+.products-container {
+  padding: 6rem 2rem;
+}
 .products-heading {
-  text-align: center;
-  margin-top: 10rem;
-  margin-bottom: 5rem;
-  font-size: 4rem;
-  color: #0000004f;
+    text-align: center;
+    margin-bottom: 4rem;
+      font-size: clamp(2.5rem, 4vw, 4rem);
+      color: rgba(0, 0, 0, 0.3);
 }
 
 .products-heading span {
-  color: #000;
+    color: var(--primary-color);
 }
 
 .products {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+    display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 3rem;
+      margin-bottom: 3rem;
 }
 
 .product {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
+    text-align: center;
+      transition: transform 0.3s ease;
 }
 
-.product .product-img-layer {
+.product:hover {
+  transform: translateY(-10px);
+}
+
+.product-img-layer {
   background: var(--main-color);
-  border-top-left-radius: 200px;
-  border-top-right-radius: 200px;
-  padding: 20px;
+    border-radius: 200px 200px 0 0;
+      padding: 2rem;
+      margin-bottom: 0;
 }
 
-.product .product-img-layer .img {
+.product-img-layer .img {
   width: 200px;
   height: 200px;
+    border-radius: 50%;
+      margin: 0 auto;
 }
 
-.product .product-img-layer .img-one {
-  background: url(Images/daniil-silantev-1P6AnKDw6S8-unsplash-removebg-preview.png);
+.product-img-layer .img-one {
+  background: url(https://thumbs.dreamstime.com/b/explore-stunning-collection-unique-modern-chair-designs-blend-functionality-artistic-flair-elevate-your-space-288578786.jpg);
   background-size: cover;
   background-position: center;
 }
-.product .product-img-layer .img-two {
-  background: url(Images/bruno-emmanuelle--MUoHL1XULM-unsplash-removebg-preview.png);
+.product-img-layer .img-two {
+  background: url(https://www.greenply.com:5001/originalimage21731401955331-2322.jpg);
   background-size: cover;
   background-position: center;
 }
-.product .product-img-layer .img-three {
-  background: url(Images/scott-webb-eD853mTbBA0-unsplash-removebg-preview.png);
+.product-img-layer .img-three {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG1oDk1DMxQMGgQplZHOEgVy0Z8ojMuYkcSQ&s);
   background-size: cover;
   background-position: center;
 }
 
 .product-content {
-  background: var(--primary-color);
-  padding: 27px;
-  padding-bottom: 50px;
-  text-align: center;
-  color: #fff;
+    background: var(--primary-color);
+    padding: 2rem;
+      color: #fff;
+    border-radius: 0 0 15px 15px;
 }
 
-.product-content .product-name {
-  font-family: sans-serif;
-  margin-bottom: 10px;
+.product-name {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-quality {
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
 
 .b-container {
-  text-align: center;
+    text-align: center;
+    margin-top: 2rem;
 }
 
 .b-container button {
-  border: none;
-  background: transparent;
-  font-size: 2rem;
-  cursor: pointer;
-  margin: 0 auto;
-  margin-left: 20px;
-  margin-top: 20px;
+    border: none;
+    background: var(--main-color);
+      font-size: 1.5rem;
+      cursor: pointer;
+    margin: 0 10px;
+      padding: 10px 15px;
+      border-radius: 50%;
+      transition: all 0.3s ease;
 }
 
-/* why us */
-.why-us {
+.b-container button:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+/* Why Us & Features */
+.why-us,
+.features {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 10rem;
+    align-items: center;
+    padding: 6rem 2rem;
+      gap: 4rem;
+      flex-wrap: wrap;
 }
 
 .why-us .img-layer {
-  width: 400px;
-  height: 400px;
-  background: var(--main-color);
-  border-radius: 100%;
+    width: 400px;
+      height: 400px;
+      background: var(--main-color);
+    border-radius: 50%;
+      overflow: hidden;
 }
 
 .why-us .img-layer .img {
-  width: 400px;
-  height: 400px;
-  background: url(Images/scott-webb-eD853mTbBA0-unsplash-removebg-preview.png);
-  background-size: cover;
-  background-position: center;
+    width: 100%;
+      height: 100%;
+      background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT--996oqYNDxFOBDn0YIo8g16moPlx6wu-nQ&s);
+      background-size: cover;
+      background-position: center;
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
 }
 
 .card {
-  width: 200px;
-  height: 150px;
-  padding: 20px;
-  margin-top: 40px;
-  border-radius: 5px;
+    padding: 2rem;
+      border-radius: 15px;
+      transition: all 0.3s ease;
+      position: relative;
+      background: #fff;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .card.card-fill {
-  background: #e3e8e490;
-  position: relative;
+    background: rgba(227, 232, 228, 0.5);
 }
 
-.card.card.card-fill .star {
-  width: 10px;
-  height: 10px;
-  padding: 15px;
-  border-radius: 100%;
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card .star {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   background: var(--primary-color);
   position: absolute;
   top: -15px;
   left: -10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 15px;
-  color: #fff;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem;
 }
 
 .card h1 {
-  color: black;
-  font-family: sans-serif;
-  font-size: 17px;
+    font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
 }
 
 .card p {
-  color: #999999;
-  font-family: sans-serif;
-  font-size: 12px;
-  margin-top: 20px;
-}
-
-/* Features */
-.features {
-  margin-top: 10rem;
+    color: #666;
+      line-height: 1.5;
+    }
+        /* Features Section */
+        .features-img {
+          width: 350px;
+          height: 400px;
+          border-radius: 200px 200px 0 0;
+        }
+        .features-img img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .features-cards {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+        /* Footer */
+        footer {
+          background: var(--primary-color);
+      color: #fff;
+        padding: 4rem 2rem;
+      }
+      
+      .footer-content {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+    justify-content: space-between;
+      align-items: flex-start;
+      gap: 4rem;
+    flex-wrap: wrap;
 }
-.main-headings {
-  font-size: 4rem;
+.logo-container h1 {
+  font-size: 3rem;
   font-family: var(--main-font);
-  color: #0000004f;
-  margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
-.main-headings span {
-  color: #000;
-}
-
-.primary-headings {
-  max-width: 500px;
-  font-family: sans-serif;
-}
-
-.features .img-container {
-  width: 300px;
-  height: 350px;
-  background: var(--main-color);
-  border-top-left-radius: 200px;
-  border-top-right-radius: 200px;
-}
-
-.features .img-container img {
-  width: 350px;
-  height: 450px;
-}
-
-footer {
-  background: var(--primary-color);
-  margin-top: 10rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  height: 100vh;
-  color: #fff;
-}
-
-footer .logo-container h1 {
-  font-size: 4rem;
-  font-family: var(--main-font);
-  margin-bottom: 20px;
-}
-
-footer .logo-container p {
+.logo-container p {
   max-width: 400px;
-  font-family: sans-serif;
-  line-height: 25px;
+  line-height: 1.6;
+    opacity: 0.8;
 }
 
-footer .about-company {
+.about-company {
   display: flex;
+  gap: 3rem;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .about-company .container {
-  margin-right: 40px;
-  margin-top: 20px;
 }
 
 .about-company .container h1 {
-  margin-bottom: 50px;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
 }
 
 .about-company .container p {
-  font-family: sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
 }
 
-@media only screen and (max-width: 1150px) {
-  .img-container {
-    width: 340px;
-    height: 340px;
-  }
-  .d-none {
-    display: none;
-  }
+.about-company .container p:hover {
+  opacity: 1;
 }
 
-@media only screen and (max-width: 900px) {
-  header {
-    height: 120vh;
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+
+  /* Navigation */
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
     text-align: center;
-    justify-content: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    padding: 2rem 0;
   }
 
-  header .content-container {
-    margin-bottom: 6rem;
-    margin-top: 4rem;
-    margin-left: 0;
-  }
+                                                                                                                                .nav-menu.active {
+                                                                                                                                  left: 0;
+                                                                                                                                }
 
-  .popularity {
-    margin-top: 22rem;
-    text-align: center;
-  }
+                                                                                                                                .nav-menu li {
+                                                                                                                                  margin: 1rem 0;
+                                                                                                                                }
+                                                                
+                                                                                                                                .mobile-menu-toggle {
+                                                                                                                                  display: flex;
+                                                                
+                                                                                                                                  .mobile-menu-toggle.active span:nth-child(2) {
+                                                                                                                                    opacity: 0;
+                                                                                                                                  }
 
-  .d-none {
-    display: none;
-  }
+                                                                                                                                .mobile-menu-toggle.active span:nth-child(1) {
+                                                                                                                                  transform: translateY(8px) rotate(45deg);
+                                                                                                                                }
+
+                                                                                                                                .mobile-menu-toggle.active span:nth-child(3) {
+                                                                                                                                  transform: translateY(-8px) rotate(-45deg);
+                                                                                                                                }
+.nav-register {
+  display: none;
 }
 
-@media only screen and (max-width: 600px) {
-  .primary-headings {
-    width: 350px;
-  }
+                                                                                                                                /* Header */
+                                                                                                                                header {
+                  flex-direction: column;
+                    text-align: center;
+                  padding: 2rem 1rem;
+                    min-height: auto;
+                  }
+                                    .content-container {
+                                      max-width: 100%;
+                                      margin-bottom: 2rem;
+                                    }
+                                    .img-container {
+                                      width: 300px;
+                                      height: 300px;
+                  
+                                      .btns-container {
+                                        justify-content: center;
+                                      }
+                  
+                                      /* Popularity */
+                                                                                                                                .popularity {
+                                                                  gap: 2rem;
+                                                                  }
+                                                                                                                                .popularity-item h1 {
+                                                                                                                                  font-size: 2rem;
+                                                                                                                                }
+                                                                                                                                /* Products */
+                                                                                                                                .products {
+                                                                                                                                  grid-template-columns: 1fr;
+                                                                                                                                  gap: 2rem;
+                                                                                                                                }
+                                                                /* Cards */
+                                                                .cards {
+                                                                  grid-template-columns: 1fr;
+                                
+                                                                  .features-cards {
+                                                                    grid-template-columns: 1fr;
+                                
+                                                                    /* Why Us & Features */
+                                                                    .why-us,
+                                                                    .features {
+                                                                      flex-direction: column;
+                                                                      text-align: center;
+                                                                      padding: 3rem 1rem;
+                                
+                                
+                                                                      .why-us .img-layer {
+                                                                        width: 300px;
+                                                                        height: 300px;
+                                  
+                                                                        .features-img {
+                                                                            width: 300px;
+                                                                            height: 350px;
+                                                                          margin-top: 2rem;
+                                                                          
+                                                                          
+                                                                            /* Footer */
+                                                                            footer {
+                                                                              text-align: center;
+                                                                          
+                                                                              .about-company {
+                                                                                justify-content: center;
+                                                                                gap: 2rem;
+          
+                                .logo-container {
+                                  margin-bottom: 2rem;
+                                }
+                                }
+                
+                                @media (max-width: 480px) {
+                                  .main-headings {
+                                    font-size: 2rem;
+                                  }
 
-  .img-container {
-    width: 350px;
-    height: 350px;
-  }
+                                                                                                                                .popularity {
+                                                                                                                                  flex-direction: column;
+                                                                                                                                  gap: 2rem;
+                                                                                                                                }
 
-  .popularity div h1 {
-    font-size: 2rem;
-  }
+                                                                                                                                .img-container {
+                                                                                                                                  width: 250px;
+                                                                                                                                  height: 250px;
+                                                                                                                                }
 
-  .popularity div {
-    font-size: 0.9rem;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 7rem;
-  }
+                                                                                                                                .why-us .img-layer {
+                                                                                                                                  width: 250px;
+                                                                                                                                  height: 250px;
+                                                                                                                                }
 
-  .main-headings {
-    font-size: 3rem;
-    text-align: center;
-  }
+                                                                                                                                .features-img {
+                                                                                                                                  width: 250px;
+                                                                                                                                  height: 300px;
+                                                                                                                                }
 
-  .d-none {
-    display: none;
-  }
-
-  .cards {
-    margin-right: 5rem;
-  }
-
-  .card-fill {
-    margin-left: 10px;
-  }
+                                                                                                                                nav {
+                                                                                                                                  padding: 1rem;
+                                                                                                                                }
+                                                                
+                                                                                                                                .about-company {
+                                                                                                                                  flex-direction: column;
+                                                                                                                                  text-align: center;
+                                                                                                                                }
 }
